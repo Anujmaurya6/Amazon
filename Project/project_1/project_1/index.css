@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    font-size: 4rem;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flicker 2s infinite;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+.watch-container {
+    margin-top: 2.5rem;
+    transform-style: preserve-3d;
+    animation: rotate 6s infinite linear;
+}
+
+.watch-img {
+    width: 250px;
+    height: 250px;
+    background: url('https://i.imgur.com/q2l4gFx.png') no-repeat center/contain;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn {
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
+    background: #ff0057;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #ff0057, 0 0 40px #ff0057, 0 0 80px #ff0057;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #00eaff;
+    box-shadow: 0 0 20px #00eaff, 0 0 60px #00eaff;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        opacity: 1;
+    }
+
+    20%,
+    24%,
+    55% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

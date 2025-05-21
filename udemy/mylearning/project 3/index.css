@@ -1,0 +1,25 @@
+.show-pass, .remember {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .login-container.shake {
+    animation: shake 0.3s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0px); }
+  }
+  
+  
+  
+  

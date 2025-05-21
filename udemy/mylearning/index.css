@@ -1,0 +1,139 @@
+/* Importing Classy Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Basic Reset */
+* {
+  margin:1;
+  padding: 0;
+  box-sizing: circle-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #1c1c1c;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  background: rgba(51, 51, 102, 0.8);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+header b {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+nav a {
+  color: #c59d39;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffd700;
+  text-shadow: 0px 0px 10px #fff;
+}
+
+/* Section Container */
+section {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+/* Headings */
+h2, h3 {
+  color: #333366;
+  margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+/* List */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #5f2c82;
+  outline: none;
+}
+
+/* Button */
+button {
+  padding: 12px 28px;
+  background: linear-gradient(to right, #5f2c82, #49a09d);
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #764ba2, #667eea);
+  transform: translateY(-2px);
+}
+
+
+  
+  
+  
